@@ -1,4 +1,4 @@
-name: CI-osx
+name: CI-windows
 
 on:
   push:
