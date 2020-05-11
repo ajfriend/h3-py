@@ -33,5 +33,4 @@ jobs:
           python -m pip install -r requirements-dev.txt
 
       - name: install from source
-        run: |
-          CFLAGS='-fPIC' python setup.py install
+        run: python setup.py install
