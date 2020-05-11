@@ -36,5 +36,6 @@ jobs:
         env:
           CIBW_MANYLINUX_X86_64_IMAGE: "dockcross/manylinux2010-x64"
         run: |
+          python -m pip install cython
           python -m pip install cibuildwheel
           python -m cibuildwheel --output-dir wheelhouse
