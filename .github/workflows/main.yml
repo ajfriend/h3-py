@@ -27,8 +27,7 @@ jobs:
           set -xe
           python -VV
           python -m site
-          python -m pip install --upgrade pip setuptools wheel
-          python -m pip install --upgrade coverage[toml] virtualenv tox tox-gh-actions
+          python -m pip install --upgrade pip setuptools wheel cython scikit-build
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
