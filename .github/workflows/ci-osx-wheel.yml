@@ -32,15 +32,6 @@ jobs:
           python -m pip install --upgrade pip setuptools wheel
           python -m pip install -r requirements-dev.txt
 
-      - name: install from source
-        run: python setup.py install
-
-      - name: lint
-        run: flake8 src/h3 setup.py tests
-
-      - name: tests
-        run: pytest tests/* --cov=h3 --full-trace
-
       - name: Build wheels
         run: |
           python -m pip install cibuildwheel
