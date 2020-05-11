@@ -28,8 +28,10 @@ jobs:
 
       - name: Add Windows SDK
         shell: cmd
-        run: choco install windows-sdk-10.1
-        #run: choco install microsoft-visual-cpp-build-tools
+        run: |
+          choco install windows-sdk-10.1
+          choco install microsoft-visual-cpp-build-tools
+          choco install vcpython27
 
       - name: Install dependencies
         run: |
