@@ -1,4 +1,4 @@
-# name: CI-linux-wheel
+# name: wheel-linux
 
 # on:
 #   push:

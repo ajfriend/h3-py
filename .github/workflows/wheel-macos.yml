@@ -1,4 +1,4 @@
-# name: CI-macos-wheel
+# name: wheel-macos
 
 # on:
 #   push:
