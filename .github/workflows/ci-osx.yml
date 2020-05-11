@@ -17,6 +17,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+        with:
+          submodules: recursive
+
       - uses: seanmiddleditch/gha-setup-ninja@master
       - uses: actions/setup-python@v2
         with:
@@ -28,7 +31,6 @@ jobs:
           python -m site
           python -m pip install --upgrade pip setuptools wheel
           python -m pip install -r requirements-dev.txt
-          git submodule update --init
 
       - name: install from source
         run: python setup.py install
